@@ -41,8 +41,9 @@ function chestshuffle(z) {
 
 setTimeout(function() {
 for (i=0; i<1; i++) {
-console.log("Time to guess! Pick a chest from 1-3")
 console.log("-----------------------")
+console.log("Time to guess! Pick a chest from 1-3")
+console.log(chests)
 } 1000});
 
 //different decisions depending on what number the user chooses by typing in openchest(number)
@@ -52,6 +53,7 @@ function guess(x) {
    console.log("the number for z is " + z);
    switch(x){
       case z:
+         console.log(chests);
          console.log("Woohoo! You found the diamond");
          addpoints();
          console.log("Your score is "  + points);
@@ -60,6 +62,7 @@ function guess(x) {
          console.log(chests);
       break;
       case !z:
+         console.log(chests);
          console.log("Muhaha! You picked the wrong chest...");
          removepoints();
          console.log("Your score is "  + points);
