@@ -45,6 +45,7 @@ console.log("Time to guess! Pick a chest from 1-3")} 1000});
 //different decisions depending on what number the user chooses by typing in openchest(number)
 function openchest(x) {
    chestshuffle(z);
+   console.log(arguments[0]);
    console.log("the number for z is " + z);
    switch(x){
       case(x == z):
